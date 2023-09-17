@@ -8,13 +8,23 @@ public class AdicionaRoupas {
 
     private int quantidadeDeRoupas;
     private String roupas[];
+    private int valoresDasRoupas[];
 
     public void defineQuantidadeDeRoupas() {
 
-        System.out.println("Digite a quantidade de roupas:"); quantidadeDeRoupas = Integer.parseInt(scanner.nextLine());
-        roupas = new String[quantidadeDeRoupas];
+        try {
 
-    }
+        System.out.println("Digite a quantidade de roupas:"); quantidadeDeRoupas = Integer.parseInt(scanner.nextLine());
+        roupas = new String[quantidadeDeRoupas];   
+       
+        }catch(NumberFormatException e) {
+
+            System.out.println("Tipo de caracter inválido, procure utilizar valores inteiros!");
+            
+        }
+        //Pulando uma linha
+        System.out.println();
+    } 
 
     public void adicionaRoupas() {
 
@@ -23,7 +33,25 @@ public class AdicionaRoupas {
             System.out.println("Digite a " + (ar + 1) + " roupa:"); roupas[ar] = scanner.nextLine();
 
         }
+        //Pulando uma linha
+        System.out.println();
+    }
 
+    public void adicionaValoresDasRoupas() {
+
+        valoresDasRoupas = new int[quantidadeDeRoupas];
+
+        for(int avr = 0; avr < quantidadeDeRoupas; avr++) {
+
+            try {
+                System.out.println("Digite o valor da " + (avr + 1) + " roupa:"); valoresDasRoupas[avr] = Integer.parseInt(scanner.nextLine());
+            }catch(NumberFormatException e) {
+                System.out.println("Tipo de caracter inválido, procure utilizar valores inteiros!");
+            }
+
+        }
+        //Pulando uma linha
+        System.out.println();
     }
 
     public void imprimeRoupasInseridas() {
@@ -33,7 +61,19 @@ public class AdicionaRoupas {
             System.out.println((ir + 1) + " roupa inserida: " + roupas[ir]); 
 
         }
+        //Pulando uma linha
+        System.out.println();
+    }
 
+    public void imprimeValoresDasRoupasInseridas() {
+
+        for(int ivr = 0; ivr < quantidadeDeRoupas; ivr++) {
+
+            System.out.println("Valor da " + (ivr + 1) + " roupa inserida: " + valoresDasRoupas[ivr]);
+
+        }
+        //Pulando uma linha
+        System.out.println();
     }
 
 }
