@@ -94,30 +94,33 @@ public class ContextoParaExecucao {
 
         System.out.println("Deseja verificar suas sessões para ver o que há de adicionado? digite sim ou nao:"); String opcao = scanner.nextLine();
 
+        //Pulando uma linha
+        System.out.println();
+
         if(opcao.equalsIgnoreCase("sim")) {
 
-            System.out.println("Sessão de Alimentos:");
+            System.out.println("Sessão de Alimentos:\n");
             adicionaComidasEBebidas.imprimeAlimentosInseridos();
             adicionaComidasEBebidas.imprimeValoresDosAlimentosInseridos();
 
-            System.out.println("Sessão de Bebidas:");
+            System.out.println("Sessão de Bebidas:\n");
             adicionaComidasEBebidas.imprimeBebidasInseridas();
             adicionaComidasEBebidas.imprimeValoresDasBebidasInseridas();
 
-            System.out.println("Sessão de Eletrônicos:");
+            System.out.println("Sessão de Eletrônicos:\n");
             adicionaEletronicosEMoveis.imprimeEletronicosInseridos();
             adicionaEletronicosEMoveis.imprimeValoresDosEletronicosInseridos();
 
-            System.out.println("Sessão de Móveis:");
+            System.out.println("Sessão de Móveis:\n");
             adicionaEletronicosEMoveis.imprimeMoveisInseridos();
             adicionaEletronicosEMoveis.imprimeValoresDosMoveisInseridos();
 
-            System.out.println("Sessão de Roupas:");
+            System.out.println("Sessão de Roupas:\n");
             adicionaRoupas.imprimeRoupasInseridas();
             adicionaRoupas.imprimeValoresDasRoupasInseridas();
 
         }else if(opcao.equalsIgnoreCase("nao")) {
-            //.......
+            //Parte para a opção de loop
         }
 
     }
