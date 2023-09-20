@@ -32,10 +32,13 @@ public class Menu {
 
         System.out.println("Por fim, deseja visualizar sua loja na visão do cliente? digite sim ou nao:"); String opcao = contexto.scanner.nextLine();
 
+        //Pulando uma linha
+        System.out.println();
+        
         if(opcao.equalsIgnoreCase("sim")) {
 
             Cliente cliente = new Cliente();
-            cliente.visaoDoCliente();
+            cliente.visaoDoCliente(contexto); 
 
         }else if(opcao.equalsIgnoreCase("nao")) {
 

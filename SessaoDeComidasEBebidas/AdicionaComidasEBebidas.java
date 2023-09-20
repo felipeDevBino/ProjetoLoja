@@ -61,7 +61,7 @@ public class AdicionaComidasEBebidas {
 
         for(int ia = 0; ia < quantidadeDeAlimentos; ia++) {
 
-            System.out.println((ia + 1) + " alimento inserido: " + alimentos[ia]);
+            System.out.println((ia + 1) + " alimento: " + alimentos[ia]);
 
         }
         //Pulando uma linha
@@ -127,7 +127,7 @@ public class AdicionaComidasEBebidas {
 
         for(int ib = 0; ib < quantidadeDeBebidas; ib++) {
 
-            System.out.println((ib + 1) + " bebida inserida: " + bebidas[ib]);
+            System.out.println((ib + 1) + " bebida: " + bebidas[ib]);
 
         }
         //Pulando uma linha
@@ -138,10 +138,10 @@ public class AdicionaComidasEBebidas {
 
         for(int ivb = 0; ivb < quantidadeDeBebidas; ivb++) {
 
-            System.out.println("Valor da " + (ivb + 1) + " bebida inserida: " + valoresDasBebidas[ivb]);
+            System.out.println("Valor da " + (ivb + 1) + " bebida: " + valoresDasBebidas[ivb]);
 
         }
-        //Pulando uma linha
+        //Pulando uma linha 
         System.out.println();
     }
 

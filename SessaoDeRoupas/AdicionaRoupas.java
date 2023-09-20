@@ -58,7 +58,7 @@ public class AdicionaRoupas {
 
         for(int ir = 0; ir < quantidadeDeRoupas; ir++) {
 
-            System.out.println((ir + 1) + " roupa inserida: " + roupas[ir]); 
+            System.out.println((ir + 1) + " roupa: " + roupas[ir]); 
 
         }
         //Pulando uma linha
@@ -69,7 +69,7 @@ public class AdicionaRoupas {
 
         for(int ivr = 0; ivr < quantidadeDeRoupas; ivr++) {
 
-            System.out.println("Valor da " + (ivr + 1) + " roupa inserida: " + valoresDasRoupas[ivr]);
+            System.out.println("Valor da " + (ivr + 1) + " roupa: " + valoresDasRoupas[ivr]);
 
         }
         //Pulando uma linha

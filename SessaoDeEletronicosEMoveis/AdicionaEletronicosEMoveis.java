@@ -54,14 +54,14 @@ public class AdicionaEletronicosEMoveis {
 
         }
         //Pulando uma linha
-        System.out.println();   
+        System.out.println();
     }
 
     public void imprimeEletronicosInseridos() {
 
         for(int ie = 0; ie < quantidadeDeEletronicos; ie++) {
 
-            System.out.println((ie + 1) + " eletrônico inserido: " + eletronicos[ie]);
+            System.out.println((ie + 1) + " eletrônico: " + eletronicos[ie]);
 
         }
         //Pulando uma linha
@@ -72,7 +72,7 @@ public class AdicionaEletronicosEMoveis {
 
         for(int ive = 0; ive < quantidadeDeEletronicos; ive++) {
 
-            System.out.println("Valor do " + (ive + 1) + " eletrônico inserido: " + valoresDosEletronicos[ive]); 
+            System.out.println("Valor do " + (ive + 1) + " eletrônico: " + valoresDosEletronicos[ive]); 
 
         }
         //Pulando uma linha
@@ -127,7 +127,7 @@ public class AdicionaEletronicosEMoveis {
 
         for(int im = 0; im < quantidadeDeMoveis; im++) {
 
-            System.out.println((im + 1) + " móvel inserido: " + moveis[im]);
+            System.out.println((im + 1) + " móvel: " + moveis[im]);
 
         }
         //Pulando uma linha
@@ -138,7 +138,7 @@ public class AdicionaEletronicosEMoveis {
 
         for(int ivm = 0; ivm < quantidadeDeMoveis; ivm++) {
 
-            System.out.println("Valor do " + (ivm + 1) + " móvel inserido: " + valoresDosMoveis[ivm]);
+            System.out.println("Valor do " + (ivm + 1) + " móvel: " + valoresDosMoveis[ivm]);
 
         }
         //Pulando uma linha

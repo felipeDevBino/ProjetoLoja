@@ -16,12 +16,18 @@ public class ContextoParaExecucao {
     public AdicionaRoupas adicionaRoupas = new AdicionaRoupas();
     public Cliente visaoDoCliente = new Cliente();
     
+    //Variável de controle de loop para adicionar ou editar itens das sessões
     public String editaradicionar = "";
 
     public void contexto() {
 
         System.out.println("\nOlá, bem vindo a loja\nAdicione itens e valores para sessões específicas de sua loja e depois os veja na visão do cliente!");
-        System.out.println("Qual sessão deseja editar? (Comidas, bebidas, Eletronicos, moveis ou Roupas):"); String seletor = scanner.nextLine();
+        System.out.println("Qual sessão deseja editar? (Comidas, bebidas, Eletronicos, moveis ou Roupas):"); 
+        System.out.println("PS: Use caracteres sem acento!");
+        String seletor = scanner.nextLine();
+        
+        //Pulando uma linha
+        System.out.println();
 
         if(seletor.equalsIgnoreCase("comidas")) {
             
@@ -86,7 +92,7 @@ public class ContextoParaExecucao {
 
     public void verificarItensDeSessoes() {
 
-        System.out.println("Deseja verificar suas sessões para ver o que há de adicionado?"); String opcao = scanner.nextLine();
+        System.out.println("Deseja verificar suas sessões para ver o que há de adicionado? digite sim ou nao:"); String opcao = scanner.nextLine();
 
         if(opcao.equalsIgnoreCase("sim")) {
 
