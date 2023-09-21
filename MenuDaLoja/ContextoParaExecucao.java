@@ -86,6 +86,7 @@ public class ContextoParaExecucao {
 
         }else {
             System.out.println("Sessão inválida e/ou inexistente / Caracter inválido!");
+            System.exit(0);
         }
 
     }
@@ -121,6 +122,9 @@ public class ContextoParaExecucao {
 
         }else if(opcao.equalsIgnoreCase("nao")) {
             //Parte para a opção de loop
+        }else {
+            System.out.println("Tipo de comando inválido!");
+            System.exit(0);
         }
 
     }

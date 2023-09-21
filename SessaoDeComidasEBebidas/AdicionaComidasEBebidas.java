@@ -17,12 +17,13 @@ public class AdicionaComidasEBebidas {
 
         try {
 
-        System.out.println("Digite a quantidade de alimentos:"); quantidadeDeAlimentos = Integer.parseInt(scanner.nextLine());
-        alimentos = new String[quantidadeDeAlimentos];
+            System.out.println("Digite a quantidade de alimentos:"); quantidadeDeAlimentos = Integer.parseInt(scanner.nextLine());
+            alimentos = new String[quantidadeDeAlimentos];
 
         }catch(NumberFormatException E) {
 
             System.out.println("Tipo de caracter inválido, procure utilizar valores inteiros!");
+            System.exit(0);
 
         }
         //Pulando uma linha
@@ -47,9 +48,14 @@ public class AdicionaComidasEBebidas {
         for(int ava = 0; ava < quantidadeDeAlimentos; ava++) {
 
             try {
+
                 System.out.println("Digite o valor do " + (ava + 1) + " alimento:"); valoresDosAlimentos[ava] = Integer.parseInt(scanner.nextLine());
+
             }catch(NumberFormatException e) {
+
                 System.out.println("Tipo de caracter inválido, procure utilizar valores inteiros!");
+                System.exit(0);
+
             }
 
         }
@@ -83,13 +89,14 @@ public class AdicionaComidasEBebidas {
 
         try {
 
-        System.out.println("Digite a quantidade de bebidas:"); quantidadeDeBebidas = Integer.parseInt(scanner.nextLine());
-        bebidas = new String[quantidadeDeBebidas];
+            System.out.println("Digite a quantidade de bebidas:"); quantidadeDeBebidas = Integer.parseInt(scanner.nextLine());
+            bebidas = new String[quantidadeDeBebidas];
 
         }catch(NumberFormatException e) {
 
             System.out.println("Tipo de caracter inválido, procure utilizar valores inteiros!");
-            
+            System.exit(0);
+
         }
         //Pulando uma linha
         System.out.println();
@@ -113,9 +120,14 @@ public class AdicionaComidasEBebidas {
         for(int vb = 0; vb < quantidadeDeBebidas; vb++) {
 
             try {
-            System.out.println("Digite o valor da " + (vb + 1) + " bebida:"); valoresDasBebidas[vb] = Integer.parseInt(scanner.nextLine());
+
+                System.out.println("Digite o valor da " + (vb + 1) + " bebida:"); valoresDasBebidas[vb] = Integer.parseInt(scanner.nextLine());
+
             }catch(NumberFormatException e) {
-            System.out.println("Tipo de caracter inválido, procure utilizar valores inteiros!");
+
+                System.out.println("Tipo de caracter inválido, procure utilizar valores inteiros!");
+                System.exit(0);
+
             }
 
         }

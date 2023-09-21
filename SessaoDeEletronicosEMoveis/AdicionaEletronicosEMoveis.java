@@ -17,12 +17,13 @@ public class AdicionaEletronicosEMoveis {
 
         try {
 
-        System.out.println("Digite a quantidade de eletrônicos:"); quantidadeDeEletronicos = Integer.parseInt(scanner.nextLine());
-        eletronicos = new String[quantidadeDeEletronicos];
+            System.out.println("Digite a quantidade de eletrônicos:"); quantidadeDeEletronicos = Integer.parseInt(scanner.nextLine());
+            eletronicos = new String[quantidadeDeEletronicos];
 
         }catch(NumberFormatException e) {
         
             System.out.println("Tipo de caracter inválido, procure utilizar valores inteiros!");
+            System.exit(0);
 
         }
         //Pulando uma linha
@@ -47,9 +48,14 @@ public class AdicionaEletronicosEMoveis {
         for(int ve = 0; ve < quantidadeDeEletronicos; ve++) {
 
             try {
+
                 System.out.println("Digite o valor do " + (ve + 1) + " eletrônico"); valoresDosEletronicos[ve] = Integer.parseInt(scanner.nextLine());
+
             }catch(NumberFormatException e) {
+                
                 System.out.println("Tipo de caracter inválido, procure utilizar valores inteiros!");
+                System.exit(0);
+
             }
 
         }
@@ -83,12 +89,13 @@ public class AdicionaEletronicosEMoveis {
 
         try {
 
-        System.out.println("Digite a quantidade de móveis:"); quantidadeDeMoveis = Integer.parseInt(scanner.nextLine());
-        moveis = new String[quantidadeDeMoveis];
+            System.out.println("Digite a quantidade de móveis:"); quantidadeDeMoveis = Integer.parseInt(scanner.nextLine());
+            moveis = new String[quantidadeDeMoveis];
         
         }catch(NumberFormatException e) {
 
             System.out.println("Tipo de caracter inválido, procure utilizar valores inteiros!");
+            System.exit(0);
 
         }
         //Pulando uma linha
@@ -113,9 +120,14 @@ public class AdicionaEletronicosEMoveis {
         for(int avm = 0; avm < quantidadeDeMoveis; avm++) {
             
             try {
+
                 System.out.println("Digite o valor do " + (avm + 1) + " móvel:"); valoresDosMoveis[avm] = Integer.parseInt(scanner.nextLine());
+
             }catch(NumberFormatException e) {
+
                 System.out.println("Tipo de caracter inválido, procure utilizar valores inteiros!");
+                System.exit(0);
+
             }
 
         }

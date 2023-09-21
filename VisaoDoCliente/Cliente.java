@@ -3,8 +3,11 @@ package ProjetoLoja.VisaoDoCliente;
 import ProjetoLoja.MenuDaLoja.ContextoParaExecucao;
 
 public class Cliente {
-    
+
+    //Escolhe a primeira sessão para ver sendo cliente
     private String sessao = "";
+    //Escolhe outras sessões para ver sendo cliente
+    private String outraSessao = "";
 
     public void visaoDoCliente(ContextoParaExecucao contexto) {
 
@@ -44,6 +47,35 @@ public class Cliente {
             System.out.println();
             contexto.adicionaRoupas.imprimeRoupasInseridas();
             contexto.adicionaRoupas.imprimeValoresDasRoupasInseridas();
+
+        }else {
+            System.out.println("Sessão inválida e/ou inexistente / Caracter inválido!");
+            System.exit(0);
+        }
+
+    }
+
+    public void olhaOutraSessao(ContextoParaExecucao contexto) {
+ 
+        System.out.println("Por fim, deseja olhar outra sessão da loja? digite sim ou nao:"); outraSessao = contexto.scanner.nextLine();  
+           
+        if(outraSessao.equalsIgnoreCase("sim")) {
+            
+            do {
+
+                this.visaoDoCliente(contexto);
+
+            }while(outraSessao.equalsIgnoreCase("sim"));
+
+        }else if(outraSessao.equalsIgnoreCase("nao")) {
+            
+            System.out.println("Programa terminado.");
+            System.exit(0);
+
+        }else {
+
+            System.out.println("Comando inválido!");
+            System.exit(0);
 
         }
 

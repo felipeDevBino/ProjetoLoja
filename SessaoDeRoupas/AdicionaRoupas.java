@@ -20,7 +20,8 @@ public class AdicionaRoupas {
         }catch(NumberFormatException e) {
 
             System.out.println("Tipo de caracter inválido, procure utilizar valores inteiros!");
-            
+            System.exit(0);
+
         }
         //Pulando uma linha
         System.out.println();
@@ -44,9 +45,14 @@ public class AdicionaRoupas {
         for(int avr = 0; avr < quantidadeDeRoupas; avr++) {
 
             try {
+
                 System.out.println("Digite o valor da " + (avr + 1) + " roupa:"); valoresDasRoupas[avr] = Integer.parseInt(scanner.nextLine());
+
             }catch(NumberFormatException e) {
+
                 System.out.println("Tipo de caracter inválido, procure utilizar valores inteiros!");
+                System.exit(0);
+
             }
 
         }
