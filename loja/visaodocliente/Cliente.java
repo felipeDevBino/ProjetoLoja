@@ -1,6 +1,6 @@
-package ProjetoLoja.VisaoDoCliente;
+package ProjetoLoja.loja.visaodocliente;
 
-import ProjetoLoja.MenuDaLoja.ContextoParaExecucao;
+import ProjetoLoja.loja.menudaloja.ContextoParaExecucao;
 
 public class Cliente {
 

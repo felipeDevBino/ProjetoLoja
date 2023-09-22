@@ -1,4 +1,4 @@
-package ProjetoLoja.SessaoDeEletronicosEMoveis;
+package ProjetoLoja.sessoes.sessaodeeletronicosemoveis;
 
 import java.util.Scanner;
 

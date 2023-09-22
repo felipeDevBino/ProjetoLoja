@@ -1,6 +1,6 @@
-package ProjetoLoja.MenuDaLoja;
+package ProjetoLoja.loja.menudaloja;
 
-import ProjetoLoja.VisaoDoCliente.Cliente;
+import ProjetoLoja.loja.visaodocliente.Cliente;
 
 public class Menu {
     

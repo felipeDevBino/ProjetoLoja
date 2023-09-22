@@ -1,11 +1,11 @@
-package ProjetoLoja.MenuDaLoja;
+package ProjetoLoja.loja.menudaloja;
 
 import java.util.Scanner;
 
-import ProjetoLoja.SessaoDeComidasEBebidas.AdicionaComidasEBebidas;
-import ProjetoLoja.SessaoDeEletronicosEMoveis.AdicionaEletronicosEMoveis;
-import ProjetoLoja.SessaoDeRoupas.AdicionaRoupas;
-import ProjetoLoja.VisaoDoCliente.Cliente;
+import ProjetoLoja.sessoes.sessaodecomidasebebidas.AdicionaComidasEBebidas;
+import ProjetoLoja.sessoes.sessaodeeletronicosemoveis.AdicionaEletronicosEMoveis;
+import ProjetoLoja.sessoes.sessaoderoupas.AdicionaRoupas;
+import ProjetoLoja.loja.visaodocliente.Cliente;
 
 public class ContextoParaExecucao {
     
